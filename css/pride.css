@@ -1,0 +1,111 @@
+/* CSS Document for Pride Month Awareness Page */
+
+/* General body and universal styles */
+body, html {
+    font-family: 'Arial', sans-serif; /* Uniform font for the entire page */
+    background-color: #F9FAFB; /* Light grayish background, easy on the eyes */
+    color: #333; /* Consistent text color for readability */
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Standard font size */
+}
+
+*, *:before, *:after {
+    box-sizing: border-box; /* Ensures consistent box sizing across all elements */
+}
+
+#container {
+    max-width: 1200px; /* Wider container for a modern layout */
+    margin: 20px auto; /* Centers the container with top and bottom margin */
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for main content area */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#header {
+    background: linear-gradient(to right, #ff0000, #ff8c00, #ffd700, #008000, #0000ff, #4b0082, #ee82ee); /* Pride colors gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+}
+
+#header h1 a, #header h3 {
+    color: inherit;
+    text-decoration: none;
+}
+
+#nav {
+    display: flex;
+    justify-content: center; /* Centering navigation items */
+    background-color: #5a3cc5; /* Light yellow for navigation */
+    list-style-type: none; /* No bullets in nav list */
+    padding: 10px 0;
+}
+
+#nav li {
+    padding: 0 15px; /* Spacing between nav items */
+}
+
+#nav li a {
+    color: #ffffff; /* Blue text */
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+#nav li a:hover, .active {
+    background-color: #e8bc1e; /* Indigo on hover/active */
+    border-radius: 5px;
+}
+
+#sidebar, #content {
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for consistency */
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+    border-right: 1px solid #E0E0E0; /* Divider between sidebar and content */
+}
+
+#content {
+    margin-left: 220px; /* Offset content to make space for sidebar */
+}
+
+.team-member {
+    background-color: #E9E9E9; /* Light gray background for member tiles */
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.team-member img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px; /* Circular images */
+}
+
+#footer {
+    background-color: #3db75e; /* Red footer matches the start of the header gradient */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #ff8c00; /* Orange top border for accent */
+}
+
+#footer a {
+    color: #ffd700; /* Yellow links in footer */
+    text-decoration: none;
+}
+
+.clear {
+    clear: both; /* Clear floats */
+}
