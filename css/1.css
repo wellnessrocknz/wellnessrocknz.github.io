@@ -6,6 +6,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    text-align: center; /* Center all text by default */
 }
 
 *, *:before, *:after {
@@ -70,6 +71,7 @@ body, html {
     background-color: #f4f4f4;
     border-radius: 10px;
     margin-bottom: 20px;
+    text-align: left; /* Sidebar content aligned to the left */
 }
 
 .sidebar-title {
@@ -82,6 +84,7 @@ body, html {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center; /* Center content text */
 }
 
 .content-title {
@@ -97,25 +100,19 @@ body, html {
 .content-list {
     margin: 20px 0;
     padding-left: 20px;
+    list-style: none;
+    text-align: center;
 }
 
 .content-list li {
     margin-bottom: 10px;
 }
 
-/* Adjust image size to be smaller */
+/* Adjust image size to be profile-sized */
 img {
-    max-width: 100%;
+    max-width: 150px; /* Profile-sized width */
     height: auto;
-    max-height: 200px;
-    width: auto;
-    border-radius: 10px;
-}
-
-.team-member img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
+    border-radius: 50%; /* Circular profile images */
     margin-bottom: 10px;
 }
 
