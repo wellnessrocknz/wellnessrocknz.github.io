@@ -98,6 +98,15 @@ body, html {
     margin-bottom: 10px;
 }
 
+/* Adjust image size to be smaller */
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
+
 .footer {
     background-color: #5656f8;
     color: white;
