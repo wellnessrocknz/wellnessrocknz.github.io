@@ -34,6 +34,11 @@ body, html {
     margin: 0;
 }
 
+.header-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
 .navbar ul {
     display: flex;
     justify-content: center;
@@ -58,6 +63,18 @@ body, html {
 .navbar ul li a:hover, .navbar-active {
     background-color: #2868fd;
     border-radius: 5px;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .content {
@@ -93,6 +110,13 @@ img {
     max-height: 200px;
     width: auto;
     border-radius: 10px;
+}
+
+.team-member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .footer {
