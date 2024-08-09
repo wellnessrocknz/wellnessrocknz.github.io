@@ -1,114 +1,117 @@
-/* CSS Document for Octopus Energy Wellness Website */
-
 /* General body and universal styles */
 body, html {
-    font-family: 'Arial', sans-serif; /* Uniform font for the entire page */
-    background-color: #F9FAFB; /* Light grayish background, easy on the eyes */
-    color: #333; /* Consistent text color for readability */
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9FAFB;
+    color: #333;
     margin: 0;
     padding: 0;
-    font-size: 16px; /* Standard font size */
+    font-size: 16px;
 }
 
 *, *:before, *:after {
-    box-sizing: border-box; /* Ensures consistent box sizing across all elements */
+    box-sizing: border-box;
 }
 
-#container {
-    max-width: 1200px; /* Wider container for a modern layout */
-    margin: 20px auto; /* Centers the container with top and bottom margin */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #FFFFFF; /* White background for main content area */
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-#header {
-    background-color: #5656f8; /* Dark green header background */
-    color: white;
+.header {
+    background-color: #5656f8;
+    color: #fff;
     padding: 20px;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
-#header h1 {
+.header-title {
     font-size: 2.5rem;
+    margin: 0;
 }
 
-#header h1 a, #header h3 {
-    color: inherit;
-    text-decoration: none;
+.header-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
 }
 
-#nav {
+.navbar ul {
     display: flex;
-    justify-content: center; /* Centering navigation items */
-    background-color: #5a3cc5; /* Lighter green for navigation */
-    list-style-type: none; /* No bullets in nav list */
+    justify-content: center;
+    background-color: #5a3cc5;
+    list-style-type: none;
     padding: 10px 0;
+    margin: 0;
 }
 
-#nav li {
-    padding: 0 15px; /* Spacing between nav items */
+.navbar ul li {
+    margin: 0 15px;
 }
 
-#nav li a {
-    color: white;
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 5px 15px;
     font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
-#nav li a:hover, .active {
-    background-color: #2868fd; /* Dark green on hover/active */
+.navbar ul li a:hover, .navbar-active {
+    background-color: #2868fd;
     border-radius: 5px;
 }
 
-#sidebar, #content {
+.sidebar {
     padding: 20px;
-    background-color: #FFFFFF; /* White background for consistency */
-}
-
-#sidebar {
-    float: left;
-    width: 200px;
-    border-right: 1px solid #E0E0E0; /* Divider between sidebar and content */
-}
-
-#content {
-    margin-left: 220px; /* Offset content to make space for sidebar */
-}
-
-.team-member {
-    background-color: #E9E9E9; /* Light gray background for member tiles */
-    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
     margin-bottom: 20px;
-    overflow: auto;
-    border-radius: 10px; /* Rounded corners */
 }
 
-.team-member img {
-    float: left;
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px; /* Circular images */
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-#footer {
-    background-color: #5656f8; /* Dark green footer matches the header */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.content-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.content-list li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #5656f8;
     color: white;
     text-align: center;
     padding: 20px;
-    border-top: 5px solid #5656f8; /* Accent top border */
+    border-radius: 0 0 10px 10px;
 }
 
-#footer a {
-    color: #B2DFDB; /* Soft teal links in footer */
+.footer-link {
+    color: #B2DFDB;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.clear {
-    clear: both; /* Clear floats */
+.footer-link:hover {
+    color: #fff;
 }
-
-
-
