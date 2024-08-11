@@ -112,7 +112,8 @@ body, html {
 img {
     max-width: 150px; /* Profile-sized width */
     height: auto;
-    border-radius: 50%; /* Circular profile images */
+    border-radius: 15px; /* Curved square profile images */
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
